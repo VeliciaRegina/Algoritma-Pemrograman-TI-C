@@ -1,3 +1,5 @@
+# MENGHITUNG JUMLAH DIGIT
+
 n = int(input('Masukkan angka: '))
 
 def jumlah_digit(n):
