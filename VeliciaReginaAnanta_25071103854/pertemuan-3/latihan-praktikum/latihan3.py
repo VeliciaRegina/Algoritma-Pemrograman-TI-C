@@ -8,7 +8,8 @@ class Vehicle:
       return ("Suara")
    
 class Car(Vehicle):
-   def __init__(self, tahun_rilis):
+   def __init__(self, tahun_rilis, merk):
+      super().__init__("Mobil", merk, tahun_rilis)
       self.__tahun_rilis = tahun_rilis
 
    def get_tahun_rilis(self):
@@ -22,7 +23,8 @@ class Car(Vehicle):
 
 
 class Motor(Vehicle):
-   def __init__(self, tahun_rilis, merek):
+   def __init__(self, tahun_rilis, merk):
+      super().__init__("Motor", merk, tahun_rilis)
       self.__tahun_rilis = tahun_rilis
 
    def get_tahun_rilis(self):
@@ -35,7 +37,7 @@ class Motor(Vehicle):
       return ("Ngenggg")
    
 
-v1 = Vehicle("Pesawat", 2016, "BoiengXXXXX")
+v1 = Vehicle("Pesawat", "BoeingXXXXX", 2016)
 c1 = Car(1999, "Ford")
 m1 = Motor(2018, "Vario")
 
